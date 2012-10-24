@@ -1,0 +1,29 @@
+[user]
+  name        = Brendan ODonnell
+  email       = brendan.james.odonnell@gmail.com
+[github]
+  user        = b0d0nne11
+[push]
+  default     = current
+[pull]
+  default     = current
+  rebase      = true
+[color]
+  branch      = auto
+  diff        = auto
+  status      = auto
+[color "branch"]
+  current     = yellow reverse
+  local       = yellow
+  remote      = green
+[color "diff"]
+  meta        = yellow bold
+  frag        = magenta bold
+  old         = red bold
+  new         = green bold
+[color "status"]
+  added       = yellow
+  changed     = green
+  untracked   = cyan
+[help]
+  autocorrect = 1
