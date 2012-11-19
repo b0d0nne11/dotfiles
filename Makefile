@@ -1,13 +1,10 @@
-install: package-purge package-install package-get link
+install: package-install package-get link
 
 link:
 	ln -sf ~/.dotfiles/.bash_aliases  ~/.bash_aliases
 	ln -sf ~/.dotfiles/.gitconfig     ~/.gitconfig
+	ln -sf ~/.dotfiles/.puppet        ~/.puppet
 	ln -sf ~/.dotfiles/.rbenv-version ~/.rbenv-version
-
-package-purge:
-	sudo apt-get purge -y \
-		ruby1.8	ruby1.8-dev libruby1.8
 
 package-install:
 	sudo apt-get install -y \
@@ -32,7 +29,6 @@ package-install:
 		virt-manager
 
 package-get:
-	mkdir -p ~/Documents/upstreams
-	cd ~/Documents/upstreams
-	wget http://download.virtualbox.org/virtualbox/4.1.18/virtualbox-4.1_4.1.18-78361~Ubuntu~precise_i386.deb
-
+	mkdir -p ~/Documents/DLs
+	cd ~/Documents/DLs && wget http://download.virtualbox.org/virtualbox/4.2.4/virtualbox-4.2_4.2.4-81684~Ubuntu~precise_i386.deb
+	cd ~/Documents/DLs && wget http://dl.google.com/android/adt/adt-bundle-linux-x86.zip
