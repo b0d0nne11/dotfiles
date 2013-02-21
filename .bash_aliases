@@ -58,6 +58,10 @@ alias v="be vagrant"
 alias up="v up"
 alias re="v reload"
 
+alias lib="librarian-chef"
+alias libi="lib install"
+alias libu="lib update"
+
 function commit {
   if [ -f ./script/rails ]; then
     compile
