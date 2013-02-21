@@ -36,7 +36,7 @@ alias hypert="sudo minicom -b 9600 -D /dev/ttyUSB0"
 alias gl='git pull --prune'
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias gp='git push origin HEAD'
-alias gd='git diff --word-diff'
+alias gd='git diff'
 alias ga='git add'
 alias gc='git commit'
 alias gca='git commit -a'
