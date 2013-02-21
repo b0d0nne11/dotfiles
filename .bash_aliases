@@ -21,6 +21,11 @@ export PATH="$HOME/.cabal/bin:$PATH"
 # get gvim working properly
 function gvim () { (/usr/bin/gvim -f "$@" &) }
 
+# setup java
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-i386"
+export JRE_HOME="/usr/lib/jvm/java-7-openjdk-i386/jre"
+export JDK_HOME="/usr/lib/jvm/java-7-openjdk-i386"
+
 ### Aliases ###
 
 # networking
