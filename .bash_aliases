@@ -13,6 +13,7 @@ export PATH="/home/brendan/bin:$PATH"
 
 # install rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
+export RBENV_ROOT="/home/brendan/.rbenv"
 eval "$(rbenv init -)"
 
 # install haskell bins
