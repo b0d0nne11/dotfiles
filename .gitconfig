@@ -1,3 +1,5 @@
+[core]
+  editor      = vim
 [user]
   name        = Brendan ODonnell
   email       = brendan.james.odonnell@gmail.com
@@ -27,3 +29,15 @@
   untracked   = cyan
 [help]
   autocorrect = 1
+[alias]
+  l           = pull --prune
+  p           = push origin HEAD
+  d           = diff --word-diff
+  a           = add
+  rm          = add -u
+  c           = commit
+  ca          = commit -a
+  co          = checkout
+  nb          = checkout -t -b
+  s           = status -sb
+  ll          = git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
