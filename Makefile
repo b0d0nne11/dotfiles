@@ -11,20 +11,20 @@ packages:
 	sudo apt-get -y install \
     linux-headers-$(uname -r) \
     build-essential \
-    curl \
+    curl libcurl4-openssl-dev \
     git git-gui \
     haskell-platform \
     ia32-libs \
     keepassx \
     mysql-client \
-    openjdk-7-jdk \
-    openssh openssh-client \
-    openvpn \
+    openjdk-6-jre \
+    openssh-client \
+    network-manager-openvpn \
     postgresql-client \
+    readline-common libreadline-dev \
     vim vim-gnome
 	# common RoR deps
 	sudo apt-get -y install \
-    libcurl4-openssl-dev \
     libpcre3 libpcre3-dev \
     libmysql++-dev \
     libxml2-dev \
