@@ -39,5 +39,6 @@
   ca          = commit -a
   co          = checkout
   nb          = checkout -t -b
+  b           = branch
   s           = status -sb
   ll          = git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
