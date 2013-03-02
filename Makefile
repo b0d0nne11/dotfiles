@@ -11,6 +11,7 @@ packages:
 	sudo apt-get -y install \
     linux-headers-$(uname -r) \
     build-essential \
+    compiz compiz-plugins compizconfig-settings-manager \
     curl libcurl4-openssl-dev \
     git git-gui \
     haskell-platform \
