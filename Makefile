@@ -1,4 +1,4 @@
-install: link
+install: link packages workspace
 
 link:
 	ln -sf ~/.dotfiles/.bash_aliases  ~/.bash_aliases
