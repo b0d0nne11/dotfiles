@@ -53,9 +53,10 @@ alias compile="be rake assets:precompile"
 alias edit="vim"
 
 # vagrant
-alias v="be vagrant"
+alias v="vagrant"
 alias up="v up"
 alias re="v reload"
+alias reup="v destroy -f && up"
 
 # librarian-chef
 alias lib="librarian-chef"

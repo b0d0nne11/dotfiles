@@ -32,7 +32,7 @@
 [alias]
   l           = pull --prune
   p           = push origin HEAD
-  d           = diff --word-diff
+  d           = diff
   a           = add
   rm          = add -u
   c           = commit
