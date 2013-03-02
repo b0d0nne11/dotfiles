@@ -42,13 +42,10 @@ workspace:
 	git clone git://github.com/sstephenson/rbenv.git            ~/.rbenv
 	git clone git://github.com/sstephenson/ruby-build.git       ~/.rbenv/plugins/ruby-build
 	git clone git://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.profile
-	echo 'eval "$(rbenv init -)"'               >> ~/.profile
-	make -p ~/workspace/tools
-	cd ~/workspace/tools
-	wget http://yara-project.googlecode.com/files/yara-1.6.tar.gz
-	wget http://dl.google.com/android/adt/adt-bundle-linux-x86_64.zip
-	wget http://download.virtualbox.org/virtualbox/4.2.6/virtualbox-4.2_4.2.6-82870~Ubuntu~quantal_amd64.deb
-	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_amd64.deb
-	wget https://launchpad.net/ubuntu/+source/chromium-browser/24.0.1312.56-0ubuntu0.12.10.3
-	git clone git://github.com/PromyLOPh/pianobar.git
+	mkdir -p ~/workspace/tools
+	cd ~/workspace/tools && wget http://yara-project.googlecode.com/files/yara-1.6.tar.gz
+	cd ~/workspace/tools && wget http://dl.google.com/android/adt/adt-bundle-linux-x86_64.zip
+	cd ~/workspace/tools && wget http://download.virtualbox.org/virtualbox/4.2.6/virtualbox-4.2_4.2.6-82870~Ubuntu~quantal_amd64.deb
+	cd ~/workspace/tools && wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_amd64.deb
+	cd ~/workspace/tools && wget https://launchpad.net/ubuntu/+source/chromium-browser/24.0.1312.56-0ubuntu0.12.10.3
+	git clone git://github.com/PromyLOPh/pianobar.git ~/workspace/tools/pianobar
