@@ -17,7 +17,7 @@ export RBENV_ROOT="/home/brendan/.rbenv"
 eval "$(rbenv init -)"
 
 # install haskell bins
-export PATH="$HOME/.cabal/bin:$PATH"
+export PATH="./cabal-dev/bin:$HOME/.cabal/bin:$PATH"
 
 # get gvim working properly
 function gvim () { (/usr/bin/gvim -f "$@" &) }
