@@ -4,7 +4,7 @@ link:
 	ln -sf ~/.dotfiles/.bash_aliases  ~/.bash_aliases
 	ln -sf ~/.dotfiles/.gitconfig     ~/.gitconfig
 	ln -sf ~/.dotfiles/.puppet        ~/.puppet
-	ln -sf ~/.dotfiles/.rbenv-version ~/.rbenv-version
+	ln -sf ~/.dotfiles/.ruby-version  ~/.ruby-version
 
 packages:
 	# general nice-to-haves
