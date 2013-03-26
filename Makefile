@@ -14,7 +14,7 @@ packages:
     build-essential \
     compiz compiz-plugins compizconfig-settings-manager \
     curl libcurl4-openssl-dev \
-    git git-gui \
+    git git-gui meld \
     haskell-platform \
     ia32-libs \
     keepassx \
