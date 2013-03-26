@@ -34,11 +34,15 @@
   p           = push origin HEAD
   d           = diff
   a           = add
-  rm          = add -u
+  del         = add -u
   c           = commit
   ca          = commit -a
   co          = checkout
   nb          = checkout -t -b
   b           = branch
   s           = status -sb
-  ll          = git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  ls          = ls-files
+  hash        = rev-parse --short HEAD
+  unstage     = reset HEAD --
+  subs        = submodule foreach git pull origin master
