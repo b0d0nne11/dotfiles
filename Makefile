@@ -18,11 +18,11 @@ packages:
     haskell-platform \
     ia32-libs \
     keepassx \
-    mysql-client \
+    mysql-client mysql-server \
     openjdk-6-jre \
     openssh-client \
     network-manager-openvpn \
-    postgresql-client \
+    postgresql postgresql-client \
     readline-common libreadline-dev \
     tmux \
     vim vim-gnome
