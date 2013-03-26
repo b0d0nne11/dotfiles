@@ -5,6 +5,7 @@ link:
 	ln -sf ~/.dotfiles/.gitconfig     ~/.gitconfig
 	ln -sf ~/.dotfiles/.puppet        ~/.puppet
 	ln -sf ~/.dotfiles/.ruby-version  ~/.ruby-version
+	ln -sf ~/.dotfiles/.tmux.conf     ~/.tmux.conf
 
 packages:
 	# general nice-to-haves
@@ -23,6 +24,7 @@ packages:
     network-manager-openvpn \
     postgresql-client \
     readline-common libreadline-dev \
+    tmux \
     vim vim-gnome
 	# common RoR deps
 	sudo apt-get -y install \
