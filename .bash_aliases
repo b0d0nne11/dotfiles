@@ -27,6 +27,16 @@ export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
 export JRE_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
+# setup maven
+export M2_HOME="/home/brendan/workspace/tools/maven"
+export PATH="$M2_HOME/bin:$PATH"
+
+# setup android-sdk
+export ANDROID_HOME="/home/brendan/workspace/tools/android-sdk"
+export ANDROID_SDK="/home/brendan/workspace/tools/android-sdk"
+export ANDROID_TOOLS="$ANDROID_HOME/tools"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+
 ### Aliases ###
 
 # networking
