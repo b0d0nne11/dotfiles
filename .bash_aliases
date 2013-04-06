@@ -42,20 +42,6 @@ export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
 # networking
 alias hypert="sudo minicom -b 9600 -D /dev/ttyUSB0"
 
-# git - stolen from https://github.com/holman/dotfiles/blob/master/git/aliases.zsh
-#alias gl='git pull --prune'
-#alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-#alias gp='git push origin HEAD'
-#alias gd='git diff'
-#alias ga='git add'
-#alias gc='git commit'
-#alias gca='git commit -a'
-#alias gco='git checkout'
-#alias gnb='git checkout -b'
-#alias gb='git branch'
-#alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
-#alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-
 # rails - stolen from https://gist.github.com/2960483
 alias b="bundle"
 alias bu="b update"
