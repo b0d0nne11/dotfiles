@@ -60,6 +60,9 @@ alias lib="librarian-chef"
 alias libi="lib install"
 alias libu="lib update"
 
+# zeus
+alias z="zeus"
+
 function newdb {
   be rake db:drop:all
   be rake db:create:all
