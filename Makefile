@@ -19,7 +19,7 @@ packages:
     ia32-libs \
     keepassx \
     mysql-client mysql-server \
-    openjdk-6-jdk \
+    openjdk-6-jdk openjdk-7-jdk \
     openssh-client \
     network-manager-openvpn \
     postgresql postgresql-client \
