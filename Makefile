@@ -44,5 +44,3 @@ rbenv:
 	git clone git://github.com/sstephenson/rbenv.git            ~/.rbenv
 	git clone git://github.com/sstephenson/ruby-build.git       ~/.rbenv/plugins/ruby-build
 	git clone git://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-	echo 'export PATH="$HOME/.rbenv/bin:$PATH"'                 >> ~/.profile
-	echo 'eval "$(rbenv init -)"'                               >> ~/.profile
