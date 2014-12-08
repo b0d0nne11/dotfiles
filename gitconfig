@@ -33,7 +33,7 @@
   l           = pull --prune
   p           = push origin HEAD
   d           = diff
-  a           = add
+  a           = add --all
   del         = add -u
   c           = commit
   ca          = commit -a

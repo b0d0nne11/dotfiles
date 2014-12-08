@@ -1,46 +1,27 @@
-install: link packages workspace
+install: link
 
 link:
-	ln -sf ~/.dotfiles/.bash_aliases  ~/.bash_aliases
-	ln -sf ~/.dotfiles/.gitconfig     ~/.gitconfig
-	ln -sf ~/.dotfiles/.puppet        ~/.puppet
-	ln -sf ~/.dotfiles/.ruby-version  ~/.ruby-version
-	ln -sf ~/.dotfiles/.tmux.conf     ~/.tmux.conf
+	ln -sf ~/.dotfiles/bashrc        ~/.bashrc
+	ln -sf ~/.dotfiles/bash_profile  ~/.bash_profile
+	ln -sf ~/.dotfiles/bash_prompt   ~/.bash_prompt
+	ln -sf ~/.dotfiles/gitconfig     ~/.gitconfig
 
 packages:
-	# general nice-to-haves
-	sudo apt-get -y install \
-    linux-headers-$(uname -r) \
-    build-essential \
-    compiz compiz-plugins compizconfig-settings-manager \
-    curl libcurl4-openssl-dev \
-    git git-gui meld \
-    haskell-platform \
-    ia32-libs \
-    keepassx \
-    mysql-client mysql-server \
-    openjdk-6-jdk openjdk-7-jdk \
-    openssh-client \
-    network-manager-openvpn \
-    postgresql postgresql-client \
-    readline-common libreadline-dev \
-    tmux \
-    vim vim-gnome
-	# common RoR deps
-	sudo apt-get -y install \
-    libpcre3 libpcre3-dev \
-    libmysql++-dev \
-    libxml2-dev \
-    libxslt1-dev
-	# burn these with fire
-	sudo apt-get -y remove \
-    libnss-mdns
-	# update all the things
-	sudo apt-get -y autoremove
-	sudo apt-get -y update
-	sudo apt-get -y upgrade
+	# TODO: redo packages section
+
+workplace:
+	mkdir ~/workspace
+	git clone git@github.com:fnichol/dvm.git        ~/workspace/dvm
+	git clone git@github.com:jordansissel/fpm.git   ~/workspace/fpm
+	git clone git@github.com:FreeRDP/FreeRDP.git    ~/workspace/FreeRDP
+	git clone git@github.com:PromyLOPh/pianobar.git ~/workspace/pianobar
+
+bin:
+	mkdir ~/bin
+	curl https://stedolan.github.io/jq/download/linux64/jq -o ~/bin/jq
+	chmod +x ~/bin/*
 
 rbenv:
-	git clone git://github.com/sstephenson/rbenv.git            ~/.rbenv
-	git clone git://github.com/sstephenson/ruby-build.git       ~/.rbenv/plugins/ruby-build
-	git clone git://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+	git clone git@github.com:sstephenson/rbenv.git            ~/.rbenv
+	git clone git@github.com:sstephenson/ruby-build.git       ~/.rbenv/plugins/ruby-build
+	git clone git@github.com:sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
