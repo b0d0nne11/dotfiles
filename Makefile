@@ -22,11 +22,11 @@ packages:
 		glib-devel glib2-devel glibc-devel glibc-headers gnutls-devel \
 		kernel-headers libao-devel libgcrypt-devel libffi-devel openssl-devel
 
-workplace:
-	mkdir ~/workspace
-	git clone git@github.com:fnichol/dvm.git        ~/workspace/dvm
-	git clone git@github.com:jordansissel/fpm.git   ~/workspace/fpm
-	git clone git@github.com:FreeRDP/FreeRDP.git    ~/workspace/FreeRDP
+workspace:
+	mkdir -p ~/workspace/github.com/b0d0nne11
+	mkdir -p ~/workspace/go/bin
+	mkdir -p ~/workspace/go/pkg
+	mkdir -p ~/workspace/go/src/github.com/b0d0nne11
 	git clone git@github.com:PromyLOPh/pianobar.git ~/workspace/pianobar
 
 bin:
