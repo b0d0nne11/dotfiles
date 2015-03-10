@@ -13,7 +13,7 @@ fi
 export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 
 # Java
-export JAVA_HOME='/usr/java/default/'
+export JAVA_HOME='/usr/lib/jvm/jre-1.8.0-openjdk/'
 export PATH="$PATH:$JAVA_HOME/bin"
 
 # Cabal
