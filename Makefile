@@ -1,4 +1,4 @@
-install: link
+all: packages link workspace bin rbenv
 
 link:
 	ln -sf ~/.dotfiles/bashrc        ~/.bashrc
