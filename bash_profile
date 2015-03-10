@@ -40,3 +40,7 @@ eval "$(rbenv init -)"
 
 # Vagrant + DVM
 eval $(dvm env)
+
+# Golang
+export GOPATH="$HOME/workspace/go"
+export PATH="$PATH:$GOPATH/bin"
