@@ -7,7 +7,20 @@ link:
 	ln -sf ~/.dotfiles/gitconfig     ~/.gitconfig
 
 packages:
-	# TODO: redo packages section
+	# Kill these
+	sudo yum erase -y \
+		nss-mdns
+	# General
+	sudo yum install -y \
+		alacarte git git-gui gnome-tweak-tool java-1.8.0-openjdk net-tools plank \
+		python-pip python-virtualenv tar unzip vim-enhanced
+	# Build Tools
+	sudo yum install -y \
+		cpp gcc gcc-c++ cmake make
+	# Libraries
+	sudo yum install -y \
+		glib-devel glib2-devel glibc-devel glibc-headers gnutls-devel \
+		kernel-headers libao-devel libgcrypt-devel libffi-devel openssl-devel
 
 workplace:
 	mkdir ~/workspace
