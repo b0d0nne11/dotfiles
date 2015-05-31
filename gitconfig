@@ -46,3 +46,5 @@
   hash        = rev-parse --short HEAD
   unstage     = reset HEAD --
   subs        = submodule foreach git pull origin master
+[url "git@github.com:"]
+	insteadOf = https://github.com/

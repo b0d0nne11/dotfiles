@@ -16,31 +16,18 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 export JAVA_HOME='/usr/lib/jvm/jre-1.8.0-openjdk/'
 export PATH="$PATH:$JAVA_HOME/bin"
 
-# Cabal
-export PATH="$PATH:$HOME/.cabal/bin"
-
-# Android SDK
-export PATH="$PATH:$HOME/workspace/adt-bundle-linux/sdk/tools/"
-export PATH="$PATH:$HOME/workspace/adt-bundle-linux/sdk/platform-tools/"
-
-# Maven
-export M2_HOME="/home/brendan/workspace/maven"
-export PATH="$PATH:$M2_HOME/bin"
-
-# Apache Directory Studio
-export PATH="$PATH:$HOME/workspace/ApacheDirectoryStudio/"
-
-# IntelliJ
-export PATH="$PATH:$HOME/workspace/idea/bin"
-
 # Ruby
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$PATH:$RBENV_ROOT/bin"
 eval "$(rbenv init -)"
 
-# Vagrant + DVM
-eval $(dvm env)
+# Python
+export WORKON_HOME="$HOME/.virtualenvs"
+source /etc/profile.d/virtualenvwrapper.sh
 
 # Golang
-export GOPATH="$HOME/workspace/go"
+export GOPATH="$HOME/workspace/golang"
 export PATH="$PATH:$GOPATH/bin"
+
+# Systemd
+systemctl --user import-environment PATH
