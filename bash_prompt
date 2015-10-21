@@ -10,7 +10,7 @@ purple="${reset}\[\033[35m\]"
 cyan="${reset}\[\033[36m\]"
 
 __venv_ps1() {
-  [ -n "$VIRTUAL_ENV" ] && echo "|${green}$(basename $VIRTUAL_ENV)${reset}| "
+  [ -n "$VIRTUAL_ENV" ] && echo "[${green}$(basename $VIRTUAL_ENV)${reset}] "
 }
 
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
@@ -23,9 +23,9 @@ if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
 
   . /usr/share/git-core/contrib/completion/git-prompt.sh
 
-  PS1_START="\n${black}(\T) ${blue}\u @ \w${reset} "
+  PS1_START="\n${cyan}\T${reset} ${blue}\u@\H:\w${reset} "
   PS1_END="\n→ "
 
-  export PROMPT_COMMAND='__git_ps1 "$PS1_START$(__venv_ps1)" "$PS1_END" "|%s|"'
+  export PROMPT_COMMAND='__git_ps1 "$PS1_START$(__venv_ps1)" "$PS1_END" "[%s] "'
 
 fi
