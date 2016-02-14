@@ -1,4 +1,4 @@
-all: link packages bin workspace haskell
+all: link packages bin workspace rbenv haskell
 
 link:
 	ln -sf ~/.dotfiles/bashrc        ~/.bashrc
