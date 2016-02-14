@@ -11,7 +11,7 @@ packages:
 	sudo yum install -y \
 		alacarte git git-gui gnome-tweak-tool java-1.8.0-openjdk net-tools \
 		python-pip python-virtualenv python-virtualenvwrapper tar unzip \
-		vim-enhanced pidgin
+		vim-enhanced weechat
 	# Build Tools
 	sudo yum install -y \
 		cpp gcc gcc-c++ cmake make
