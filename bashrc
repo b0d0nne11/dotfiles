@@ -27,6 +27,7 @@ alias .....='cd ../../../..'  # Go up four directories
 alias c='clear'
 alias q='exit'
 
+alias xclip='xclip -selection clipboard'
 function socksproxy {
   ssh -CfN -D 12345 $1
 }
