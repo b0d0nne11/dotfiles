@@ -25,15 +25,15 @@ packages:
 		openssl-devel yasm yasm-devel json-c-devel libcurl-devel
 
 bin:
-	mkdir -p ~/bin
+	mkdir -p ~/.local/bin
 
 workspace:
 	mkdir -p ~/workspace/b0d0nne11
 	mkdir -p ~/workspace/golang/{bin,pkg,src}
 
 jq: bin
-	curl https://stedolan.github.io/jq/download/linux64/jq -o ~/bin/jq
-	chmod +x ~/bin/jq
+	curl https://stedolan.github.io/jq/download/linux64/jq -o ~/.local/bin/jq
+	chmod +x ~/.local/bin/jq
 
 rbenv:
 	git clone git@github.com:sstephenson/rbenv.git            ~/.rbenv
