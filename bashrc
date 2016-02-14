@@ -28,66 +28,6 @@ alias c='clear'
 alias q='exit'
 
 alias xclip='xclip -selection clipboard'
-function socksproxy {
-  ssh -CfN -D 12345 $1
-}
-
-# Ruby
-
-alias b='bundle'
-alias bu='b update'
-alias be='b exec'
-alias compile='be rake assets:precompile'
-
-function newdb {
-	be rake db:drop:all
-	be rake db:create:all
-	be rake db:setup
-	be rake db:test:prepare
-}
 
 # Python
 alias activate='source venv/bin/activate'
-
-# Networking
-alias hypert='sudo minicom -b 9600 -D /dev/ttyUSB0'
-
-# Chef
-export OPSCODE_USER="$SSO_USER"
-
-# Systemd
-alias start='systemctl --user start'
-alias stop='systemctl --user stop'
-alias status='systemctl --user status'
-alias reload='systemctl --user reload'
-alias restart='systemctl --user restart'
-
-# Docker
-
-function docker-machine-wrapper {
-  command docker-machine $@
-  if [ $# -eq 2 ]; then
-    cmd=$1; target=$2;
-    case "$cmd" in
-    'start')
-      eval "$(docker-machine env $target)"
-      export DOCKER_IP="$(docker-machine ip $target)"
-      systemctl --user import-environment DOCKER_HOST
-      systemctl --user import-environment DOCKER_TLS_VERIFY
-      systemctl --user import-environment DOCKER_CERT_PATH
-      systemctl --user import-environment DOCKER_MACHINE_NAME
-      systemctl --user import-environment DOCKER_IP
-      ;;
-    'stop')
-      eval "$(docker-machine env -u $target)"
-      unset DOCKER_IP
-      systemctl --user unset-environment DOCKER_HOST
-      systemctl --user unset-environment DOCKER_TLS_VERIFY
-      systemctl --user unset-environment DOCKER_CERT_PATH
-      systemctl --user unset-environment DOCKER_MACHINE_NAME
-      systemctl --user unset-environment DOCKER_IP
-    esac
-  fi
-}
-
-alias docker-machine='docker-machine-wrapper'
