@@ -42,4 +42,5 @@ pianobar: workspace
 
 haskell:
 	sudo yum install -y haskell-platform
+	cabal update
 	cabal install hdevtools hoogle ghc-mod hlint
