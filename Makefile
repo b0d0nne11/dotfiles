@@ -7,9 +7,6 @@ link:
 	ln -sf ~/.dotfiles/gitconfig     ~/.gitconfig
 
 packages:
-	# Kill these
-	sudo yum erase -y \
-		nss-mdns
 	# General
 	sudo yum install -y \
 		alacarte git git-gui gnome-tweak-tool java-1.8.0-openjdk net-tools \
