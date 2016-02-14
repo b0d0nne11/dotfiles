@@ -1,4 +1,4 @@
-all: link packages bin workspace
+all: link packages bin workspace haskell
 
 link:
 	ln -sf ~/.dotfiles/bashrc        ~/.bashrc
@@ -42,3 +42,7 @@ rbenv:
 
 pianobar: workspace
 	git clone git@github.com:PromyLOPh/pianobar.git ~/workspace/pianobar
+
+haskell:
+	sudo yum install -y haskell-platform
+	cabal install hdevtools hoogle ghc-mod hlint
