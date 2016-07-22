@@ -31,3 +31,7 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Systemd
 systemctl --user import-environment PATH
+
+# Chef
+export PATH="$PATH:/root/.chefdk/gem/ruby/2.1.0/bin"
+eval "$(chef shell-init bash)"

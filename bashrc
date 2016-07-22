@@ -31,3 +31,6 @@ alias xclip='xclip -selection clipboard'
 
 # Python
 alias activate='source venv/bin/activate'
+
+# AWS CLI
+complete -C "$(which aws_completer)" aws
