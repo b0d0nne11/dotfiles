@@ -12,6 +12,9 @@ fi
 # General
 export PATH="$PATH:$HOME/.local/bin"
 
+# Chef (needs to be before Ruby)
+eval "$(chef shell-init bash)"
+
 # Java
 export JAVA_HOME='/usr/lib/jvm/jre-1.8.0-openjdk/'
 export PATH="$PATH:$JAVA_HOME/bin"
@@ -31,7 +34,3 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Systemd
 systemctl --user import-environment PATH
-
-# Chef
-export PATH="$PATH:/root/.chefdk/gem/ruby/2.1.0/bin"
-eval "$(chef shell-init bash)"
