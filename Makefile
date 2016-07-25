@@ -1,4 +1,4 @@
-all: link packages bin workspace rbenv haskell
+all: link packages bin workspace jq rbenv vim
 
 link:
 	ln -sf ~/.dotfiles/bashrc       ~/.bashrc
