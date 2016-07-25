@@ -5,6 +5,7 @@ link:
 	ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
 	ln -sf ~/.dotfiles/bash_prompt  ~/.bash_prompt
 	ln -sf ~/.dotfiles/gitconfig    ~/.gitconfig
+	ln -sf ~/.dotfiles/vimrc        ~/.vimrc
 
 packages:
 	# General
@@ -35,3 +36,5 @@ rbenv:
 	git clone git@github.com:sstephenson/rbenv.git      ~/.rbenv
 	git clone git@github.com:sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
+vim:
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
