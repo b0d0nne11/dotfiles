@@ -6,12 +6,21 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-sensible'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+
+" Haskell plugins
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'Shougo/vimproc'
+Plugin 'nbouscal/vim-stylish-haskell'
 
 call vundle#end()
 filetype plugin indent on
@@ -31,6 +40,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" GitGutter
+set updatetime=250
 
 """ General Options
 

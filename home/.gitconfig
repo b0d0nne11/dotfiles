@@ -28,7 +28,7 @@
   changed     = green
   untracked   = cyan
 [help]
-  autocorrect = 1
+  autocorrect = 0
 [alias]
   l           = pull --prune
   p           = push origin HEAD
