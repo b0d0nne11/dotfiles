@@ -41,8 +41,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" GitGutter
+" Gitgutter
 set updatetime=250
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
+
+" neco-ghc
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:necoghc_enable_detailed_browse = 1
 
 """ General Options
 
