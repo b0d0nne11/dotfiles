@@ -64,6 +64,9 @@ set autoindent
 " dont wrap text
 set nowrap
 
+" turn on line numbers
+set number
+
 " ignore case when searching
 set ignorecase
 set smartcase
