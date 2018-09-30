@@ -1,0 +1,10 @@
+{
+    "editor.fontSize": 11,
+    "python.venvPath": "~/.virtualenvs",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "languageServerHaskell.useCustomHieWrapper": true,
+    "languageServerHaskell.useCustomHieWrapperPath": "~/.local/bin/hie-wrapper",
+    "haskell.indentationRules.enabled": false
+}
