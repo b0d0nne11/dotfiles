@@ -54,7 +54,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(docker git tmux)
 
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 
 # Must come before oh-my-zsh.sh
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
