@@ -12,6 +12,12 @@ To setup from scratch:
 sudo dnf -y update
 sudo dnf -y install git tmux vim zsh
 
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Install Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Change the login shell
 chsh -s /bin/zsh
 
