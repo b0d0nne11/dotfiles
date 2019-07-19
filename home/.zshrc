@@ -52,7 +52,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker git tmux)
+plugins=(docker git git-prompt rbenv pyenv tmux)
 
 ZSH_TMUX_AUTOSTART=false
 
@@ -95,22 +95,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/.local/lib:/usr/local/lib"
 
-# setup rbenv
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT/bin:$PATH"
-eval "$(rbenv init -)"
-
-# setup pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# setup virtualenvwrapper
-source "$(pyenv which virtualenvwrapper.sh)"
-
-# setup chefdk
-export PATH="/opt/chefdk/bin:$PATH"
-
 # setup golang
-export GOROOT="$HOME/workspace/go"
-export PATH="$GOROOT/bin:$PATH"
+export GOPATH="$HOME/workspace/go"
+export PATH="/usr/local/go/bin:$PATH"

@@ -33,6 +33,34 @@ homeshick clone robbyrussell/oh-my-zsh
 homeshick link dotfiles
 ```
 
+To setup additional tools:
+```
+# https://rpmfusion.org
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+# https://github.com/rbenv/rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+# https://github.com/rbenv/ruby-build
+mkdir ~/.rbenv/plugins
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# https://github.com/pyenv/pyenv
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+# https://github.com/pyenv/pyenv-virtualenv
+mkdir ~/.pyenv/plugins
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+
+# https://docs.haskellstack.org/en/stable/README/
+curl -sSL https://get.haskellstack.org/ | sh
+
+# https://github.com/tmux-plugins/tpm#installing-plugins
+
+# https://golang.org/doc/install
+wget -P ~/Downloads https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+tar -C /usr/local -xzf ~/Downloads/go1.12.7.linux-amd64.tar.gz
+```
+
 ## License
 
 ```
