@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Zsh Terminal
+Exec=/usr/bin/zsh -c tmux
+Type=Application
+Icon=gnome-panel-launcher
