@@ -15,13 +15,6 @@ Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 
-" Haskell plugins
-Plugin 'neovimhaskell/haskell-vim'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'Shougo/vimproc'
-Plugin 'nbouscal/vim-stylish-haskell'
-
 call vundle#end()
 filetype plugin indent on
 

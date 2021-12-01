@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.homesick/repos/oh-my-zsh
+export ZSH=$HOME/.homesick/repos/ohmyzsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -54,7 +55,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(docker git git-prompt rbenv pyenv tmux)
 
-ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART=true
 
 # Must come before oh-my-zsh.sh
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
@@ -90,11 +91,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# setup .local
-export PATH="$HOME/.local/bin:$PATH"
-export LD_LIBRARY_PATH="$HOME/.local/lib:/usr/local/lib"
-
-# setup golang
-export GOPATH="$HOME/workspace/go"
-export PATH="/usr/local/go/bin:$PATH"
