@@ -1,10 +1,16 @@
 {
-    "editor.fontSize": 11,
-    "python.venvPath": "~/.virtualenvs",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "languageServerHaskell.useCustomHieWrapper": true,
     "languageServerHaskell.useCustomHieWrapperPath": "~/.local/bin/hie-wrapper",
-    "haskell.indentationRules.enabled": false
+    "haskell.serverExecutablePath": "${HOME}/.ghcup/bin/haskell-language-server-wrapper",
+    "haskell.indentationRules.enabled": false,
+    "haskell.formattingProvider": "stylish-haskell",
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Hasklig, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
 }
