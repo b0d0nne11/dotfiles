@@ -12,14 +12,6 @@ To setup from scratch:
 sudo dnf -y update
 sudo dnf -y install git git-gui tmux vim zsh
 
-# Install Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
-# Install Tmux Plugin Manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-# and https://github.com/tmux-plugins/tpm#installing-plugins
-
 # Setup PRM Fusion
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -34,7 +26,6 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # Install pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-# https://github.com/pyenv/pyenv-virtualenv
 mkdir -p ~/.pyenv/plugins
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 
@@ -51,4 +42,12 @@ source $HOME/.homesick/repos/homeshick/homeshick.sh
 # Install dotfiles
 homeshick clone b0d0nne11/dotfiles
 homeshick clone ohmyzsh/ohmyzsh
+
+# Install Vim Plugins
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
+# Install Tmux Plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# and https://github.com/tmux-plugins/tpm#installing-plugins
 ```
