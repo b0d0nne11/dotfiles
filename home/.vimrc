@@ -6,12 +6,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 
@@ -20,30 +17,6 @@ filetype plugin indent on
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
-
-" Jellybeans
-syntax enable
-colorscheme jellybeans
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Gitgutter
-set updatetime=250
-let g:gitgutter_realtime = 1
-let g:gitgutter_eager = 1
-
-" neco-ghc
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
-let g:necoghc_enable_detailed_browse = 1
 
 """ General Options
 

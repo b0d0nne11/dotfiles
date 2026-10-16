@@ -1,12 +1,47 @@
 [core]
-  editor      = vim
+  editor = vim
+  pager = delta
 [user]
-  name        = Brendan ODonnell
-  email       = brendan@odonnell.xyz
+  name = Brendan O'Donnell
+  email = brendan@odonnell.xyz
 [github]
-  user        = b0d0nne11
+  user = b0d0nne11
 [push]
-  default     = current
+  default = current
 [pull]
-  default     = current
-  rebase      = true
+  default = current
+  rebase = true
+[rebase]
+  autostash = true
+
+# https://github.com/dandavison/delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  side-by-side = true
+  navigate = true
+[merge]
+  conflictStyle = zdiff3
+
+# https://git-lfs.com/
+[filter "lfs"]
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+
+# https://git-send-email.io/
+# https://git-scm.com/docs/git-send-email
+[sendemail]
+  smtpserver = smtp.fastmail.com
+  smtpuser = brendan@odonnell.xyz
+  smtpencryption = ssl
+  smtpserverport = 465
+
+[credential]
+  helper = osxkeychain
+
+# https://www.tomups.com/posts/git-worktrees/
+# https://github.com/tomups/worktrees-scripts/blob/main/install.sh
+[alias]
+	wtclone = !/Users/brendan/.local/bin/wtclone.sh

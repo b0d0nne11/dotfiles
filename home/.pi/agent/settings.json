@@ -1,0 +1,22 @@
+{
+  "lastChangelogVersion": "1.0.0",
+  "theme": "dark",
+  "defaultProvider": "openrouter",
+  "defaultModel": "openrouter/auto",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:pi-subagents",
+    {
+      "source": "npm:@dietrichgebert/ponytail",
+      "extensions": [
+        "+pi-extension/index.js"
+      ]
+    }
+  ],
+  "enabledModels": [
+    "openrouter/~z-ai/glm-latest",
+    "openrouter/~z-ai/glm-flash-latest",
+    "openrouter/~deepseek/deepseek-pro-latest",
+    "openrouter/~deepseek/deepseek-flash-latest"
+  ]
+}
